@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TapTitan</string>
+    <string name="life">몬스터체력 %1$d/%2$d</string>
+    <string name="levelup">레벨업\n레벨%1$d\n비용 : %2$d원 </string>
+    <string name="price">비용 : %d 원 </string>
+    <string name="money">골드\n%d원 </string>
+    <string name="dpt">DPT : %d</string>
+    <string name="dps">DPS : %d</string>
+    <string name="pet">펫 구 매\n\n150골드</string>
+</resources>

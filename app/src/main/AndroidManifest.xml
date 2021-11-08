@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.TapTitan">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/taptitan_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/taptitan_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.TapTitan.Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.TapTitan.MainActivity"></activity>
+
+        <activity android:name="com.example.TapTitan.knightstoreActivity"></activity>
+
+        <activity android:name=".PetstoreActivity"></activity>
+
+        <activity android:name="com.example.TapTitan.PetchoiceActivity"></activity>
+
+        <activity android:name="com.example.TapTitan.MusicSetting"
+            android:label="음악설정"></activity>
+        <service android:name="com.example.TapTitan.MusicService">
+            <intent-filter>
+                <action android:name="com.cookandroid.MusicService"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.example.TapTitan.PopupActivity" android:theme="@android:style/Theme.Dialog" />
+
+    </application>
+
+</manifest>
